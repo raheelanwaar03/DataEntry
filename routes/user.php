@@ -3,4 +3,9 @@
 use App\Http\Controllers\user\UserDashboardController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/User',[UserDashboardController::class,'index'])->name('User.dashboard');
+
+Route::prefix('User/')->name('User.')->middleware('auth','user')->group(function () {
+
+    Route::get('Dashboard',[UserDashboardController::class,'index'])->name('Dashboard');
+
+});

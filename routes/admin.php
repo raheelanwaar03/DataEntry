@@ -3,4 +3,8 @@
 use App\Http\Controllers\admin\AdminDashboardControlller;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/Admin',[AdminDashboardControlller::class,'index'])->name('Admin.dashboard');
+
+Route::prefix('Admin/')->name('Admin.')->middleware('auth','admin')->group(function () {
+
+Route::get('Dashboard',[AdminDashboardControlller::class,'index'])->name('Dashboard');
+});

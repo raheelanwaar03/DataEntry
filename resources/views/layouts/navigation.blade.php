@@ -103,9 +103,8 @@
                                 <ul>
                                     <li><a href="{{ route('Welcome') }}">HOME</a>
                                     </li>
-                                    <li><a href="about.html">ABOUT US</a>
-                                    </li>
-                                    <li><a href="{{ route('User.dashboard') }}">Dashboard</a>
+                                    <li><a href="{{ route('User.Dashboard') }}">Dashboard</a>
+                                    <li><a href="about.html">ABOUT US</a></li>
                                     </li>
                                     <li><a href="services.html">SERVICES</a>
                                     </li>
@@ -129,14 +128,9 @@
                         <div class="mobile-menu">
                             <nav id="dropdown">
                                 <ul>
-                                    <li><a href="{{ route('Welcome') }}">HOME</a>
-                                    </li>
+                                    <li><a href="{{ route('Welcome') }}">HOME</a></li>
+                                    <li><a href="{{ route('User.Dashboard') }}">Dashboard</a></li>
                                     <li><a href="about.html">ABOUT US</a>
-                                    </li>
-                                    <li><a href="$">Dashboard</a>
-                                        <ul class="submenu">
-                                            <li><a href="project-2.html">Projects 2</a></li>
-                                        </ul>
                                     </li>
                                     <li><a href="blog.html">BLOG</a>
                                         <ul class="submenu">
