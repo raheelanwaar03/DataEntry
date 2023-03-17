@@ -80,7 +80,14 @@
                         </div>
                     </div>
                     <div class="quote-btn">
+                        @if (auth()->user())
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-warning text-white">Logout</button>
+                        </form>
+                        @else
                         <a href="{{ route('register') }}" class="btn btn-large btn-warning  text-white">Register Now</a>
+                        @endif
                     </div>
                 </div>
             </div>
