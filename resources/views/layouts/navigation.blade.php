@@ -105,7 +105,7 @@
                                     </li>
                                     <li><a href="about.html">ABOUT US</a>
                                     </li>
-                                    <li><a href="#">Dashboard</a>
+                                    <li><a href="{{ route('User.dashboard') }}">Dashboard</a>
                                     </li>
                                     <li><a href="services.html">SERVICES</a>
                                     </li>
