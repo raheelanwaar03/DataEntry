@@ -101,7 +101,7 @@
                         <div class="main-menu text-center">
                             <nav>
                                 <ul>
-                                    <li><a href="index.html">HOME</a>
+                                    <li><a href="{{ route('Welcome') }}">HOME</a>
                                     </li>
                                     <li><a href="about.html">ABOUT US</a>
                                     </li>
