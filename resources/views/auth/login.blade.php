@@ -34,7 +34,10 @@
                                 <input type="password" style="background: transparent;color:black " name="password"
                                     class="form-control" placeholder="Enter Your Password">
                             </div>
-                            <button type="submit" class="btn btn-outline-success ">Submit</button>
+                            <div class="">
+                                <button type="submit" class="btn btn-outline-success ">Submit</button>
+                                <a href="#" class="btn btn-outline-secondary">Forgot Password</a>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -42,7 +45,7 @@
         </div>
         <div class="row" style="margin-top: -100px">
             <div class="col-md-12">
-                <h1 class="text-center text-light">Have not register yet?<span><a href="{{ route('register') }}" style="text-decoration: none;color:green" > Register Now! </a></span></h1>
+                <h1 class="text-center text-light">Have not register yet?<span><a href="{{ route('register') }}" style="text-decoration: none;" class="btn btn-success btn-lg"> Register Now! </a></span></h1>
             </div>
         </div>
     </div>

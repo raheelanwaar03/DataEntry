@@ -53,7 +53,7 @@
         </div>
         <div class="row" style="margin-top: -100px">
             <div class="col-md-12">
-                <h1 class="text-center text-light">Already have account?<span><a href="{{ route('login') }}" style="text-decoration: none;color:green" > Sign
+                <h1 class="text-center text-light">Already have account?<span><a href="{{ route('login') }}" style="text-decoration: none;" class="btn btn-success btn-lg"> Sign
                             in </a></span></h1>
             </div>
         </div>
