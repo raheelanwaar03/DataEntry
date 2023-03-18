@@ -15,7 +15,7 @@
     <meta property="og:description" content="Lezato | Dashboard" />
     <meta property="og:image" content="../social-image.html" />
     <meta name="format-detection" content="telephone=no">
-    <title>Admin | Dashboard</title>
+    <title>User | Dashboard</title>
     <link rel="shortcut icon" type="image/png" href="{{ asset('admin/public/images/logo.png') }}" />
     <link href="{{ asset('admin/public/vendor/chartist/css/chartist.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/public/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet"
@@ -84,23 +84,21 @@
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="flaticon-043-menu"></i>
-                            <span class="nav-text">User's</span>
+                            <span class="nav-text">Referal</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="#">All User's</a></li>
-                            <li><a href="#">Pending User's</a></li>
-                            <li><a href="#">Approved User's</a></li>
-                            <li><a href="#">Rejected User's</a></li>
+                            <li><a href="#">Refer Link</a></li>
+                            <li><a href="#">Total Team Member</a></li>
                         </ul>
                     </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="flaticon-041-graph"></i>
                             <span class="nav-text">Limite's</span>
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="chart-flot.html">Add Referal limit</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                     {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="flaticon-045-heart"></i>
                             <span class="nav-text">Food</span>
