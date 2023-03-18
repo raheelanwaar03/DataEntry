@@ -103,7 +103,9 @@
                                 <ul>
                                     <li><a href="{{ route('Welcome') }}">HOME</a>
                                     </li>
+                                    @if (auth()->user())
                                     <li><a href="{{ route('User.Dashboard') }}">Dashboard</a>
+                                    @endif
                                     <li><a href="about.html">ABOUT US</a></li>
                                     </li>
                                     <li><a href="services.html">SERVICES</a>
