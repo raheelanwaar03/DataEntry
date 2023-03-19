@@ -11,4 +11,5 @@ class UserDashboardController extends Controller
     {
         return view('user.index');
     }
+
 }

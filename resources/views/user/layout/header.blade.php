@@ -87,7 +87,6 @@
                             <span class="nav-text">Referal</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="#">Refer Link</a></li>
                             <li><a href="#">Total Team Member</a></li>
                         </ul>
                     </li>

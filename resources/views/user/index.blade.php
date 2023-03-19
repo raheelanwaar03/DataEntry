@@ -51,9 +51,34 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-12 col-sm-12">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-between">
+                                    <div class="menu">
+                                        <span class="font-w500 fs-16 d-block mb-3">Refer Link</span>
+                                        <input type="text" style="width: 100%;border:none"
+                                            value="{{ route('register', ['referal' => Auth::user()->name]) }}"
+                                            id="myInput">
+                                        <button onclick="copy()" class="btn btn-secondary px-2">copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function copy() {
+            // Get the text field
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+            // Alert the copied text
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
 @endsection

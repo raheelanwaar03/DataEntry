@@ -18,7 +18,7 @@
                 <h1 class="text-center text-success">Register New Account</h1>
             </div>
         </div>
-        <div style="margin-top: -100px" class="row min-vh-100">
+        <div class="row min-vh-100">
             <div class="col-md-12 d-flex justify-content-center align-items-center">
                 <div class="card bg-transparent border-black shadow-lg w-100">
                     <div class="card-body">
@@ -55,13 +55,17 @@
                                     name="password_confirmation" class="form-control"
                                     placeholder="Enter Your Confirm Password">
                             </div>
+                            <div class="form-group">
+                                <label style="color:green"><b style="font-size: 25px">Referal</b></label>
+                                <input type="text" name="referal" value="{{ $referal }}" class="form-control text-dark" readonly>
+                            </div>
                             <button type="submit" class="btn btn-success">Enroll</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-top: -100px">
+        <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center text-light">Already have account?<span><a href="{{ route('login') }}" style="text-decoration: none;" class="btn btn-success btn-lg"> Sign
                             in </a></span></h1>
