@@ -10,4 +10,15 @@ class LandingPageCotroller extends Controller
     {
         return view('LandingPage.index');
     }
+
+    public function contactUs()
+    {
+        return view('LandingPage.contact');
+    }
+
+    public function aboutUs()
+    {
+        return view('LandingPage.about');
+    }
+
 }

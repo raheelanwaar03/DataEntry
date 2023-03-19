@@ -106,9 +106,9 @@
                                     @if (auth()->user())
                                     <li><a href="{{ route('User.Dashboard') }}">Dashboard</a>
                                     @endif
-                                    <li><a href="about.html">ABOUT US</a></li>
+                                    <li><a href="{{ route('Welcome.About.Us') }}">ABOUT US</a></li>
                                     </li>
-                                    <li><a href="services.html">SERVICES</a>
+                                    <li><a href="{{ route('Welcome.Contact.Us') }}">Contact Us</a>
                                     </li>
                                     <li><a href="project.html">PROJECTS</a>
                                     </li>
@@ -132,14 +132,14 @@
                                 <ul>
                                     <li><a href="{{ route('Welcome') }}">HOME</a></li>
                                     <li><a href="{{ route('User.Dashboard') }}">Dashboard</a></li>
-                                    <li><a href="about.html">ABOUT US</a>
+                                    <li><a href="{{ route('Welcome.About.Us') }}">About</a>
                                     </li>
+                                    <li><a href="{{ route('Welcome.Contact.Us') }}">Contact Us</a></li>
                                     <li><a href="blog.html">BLOG</a>
                                         <ul class="submenu">
                                             <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">CONTACT</a></li>
                                 </ul>
                             </nav>
                         </div>
