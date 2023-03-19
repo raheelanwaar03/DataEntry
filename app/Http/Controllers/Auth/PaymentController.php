@@ -10,6 +10,7 @@ class PaymentController extends Controller
 {
     public function payment()
     {
+        return 1;
         return view('auth.payment');
     }
 

@@ -16,7 +16,7 @@ Route::middleware('guest')->group(function () {
     Route::get('register/{referal?}', [RegisteredUserController::class, 'create'])
                 ->name('register');
 
-    Route::get('User/Payment',[PaymentController::class,'payment']);
+    Route::get('Payment',[PaymentController::class,'payment'])->name('Payment');
 
     Route::post('/Payment/Store',[PaymentController::class,'paymentStore'])->name('Payment.Store');
 
