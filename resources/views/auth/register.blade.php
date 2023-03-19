@@ -25,7 +25,7 @@
                         <form action="{{ route('register') }}" method="POST">
                             @csrf
                             <div class="form-group">
-                                <label style="color:green"><b style="font-size: 25px">Name</b></label>
+                                <label style="color:green"><b style="font-size: 25px">User Name</b></label>
                                 <input type="text" name="name" style="background: transparent;color:black "
                                     class="form-control" placeholder="Enter Your Name">
                             </div>
@@ -33,6 +33,16 @@
                                 <label style="color:green"><b style="font-size: 25px">Email</b></label>
                                 <input type="text" style="background: transparent;color:black " name="email"
                                     class="form-control" placeholder="Enter Your Email">
+                            </div>
+                            <div class="form-group">
+                                <label style="color:green"><b style="font-size: 25px">Phone</b></label>
+                                <input type="number" style="background: transparent;color:black " name="phone"
+                                    class="form-control" placeholder="Enter Your Phone">
+                            </div>
+                            <div class="form-group">
+                                <label style="color:green"><b style="font-size: 25px">Address</b></label>
+                                <input type="text" style="background: transparent;color:black " name="address"
+                                    class="form-control" placeholder="Enter Your Address">
                             </div>
                             <div class="form-group">
                                 <label style="color:green"><b style="font-size: 25px">Password</b></label>
@@ -45,7 +55,7 @@
                                     name="password_confirmation" class="form-control"
                                     placeholder="Enter Your Confirm Password">
                             </div>
-                            <button type="submit" class="btn btn-outline-success ">Submit</button>
+                            <button type="submit" class="btn btn-success">Enroll</button>
                         </form>
                     </div>
                 </div>

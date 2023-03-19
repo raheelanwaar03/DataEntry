@@ -35,7 +35,7 @@
                                     class="form-control" placeholder="Enter Your Password">
                             </div>
                             <div class="">
-                                <button type="submit" class="btn btn-outline-success ">Submit</button>
+                                <button type="submit" class="btn btn-outline-success ">Login</button>
                                 <a href="#" class="btn btn-outline-secondary">Forgot Password</a>
                             </div>
                         </form>
