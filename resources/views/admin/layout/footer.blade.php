@@ -6,17 +6,19 @@
 </div>
 </div>
 
-<script src="{{ asset('admin/public/vendor/global/global.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('admin/public/vendor/jquery-nice-select/js/jquery.nice-select.min.js') }}" type="text/javascript">
-</script>
-<script src="{{ asset('admin/public/vendor/chart.js/Chart.bundle.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('admin/public/vendor/apexchart/apexchart.js') }}" type="text/javascript"></script>
-<script src="{{ asset('admin/public/vendor/peity/jquery.peity.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('admin/public/js/dashboard/dashboard-1.js') }}" type="text/javascript"></script>
-<script src="{{ asset('admin/public/js/custom.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('admin/public/js/deznav-init.js') }}" type="text/javascript"></script>
-<script src="{{ asset('admin/public/js/demo.js') }}" type="text/javascript"></script>
-<script src="{{ asset('admin/public/vendor/global/global.min.js') }}" type="text/javascript"></script>
+{{-- js files --}}
+
+<script src="{{asset('admin/public/vendor/global/global.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('admin/public/vendor/jquery-nice-select/js/jquery.nice-select.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('admin/public/vendor/chart.js/Chart.bundle.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('admin/public/vendor/apexchart/apexchart.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('admin/public/vendor/datatables/js/jquery.dataTables.min.js') }}" type="text/javascript"></script>
+    <script src="{{asset('admin/public/js/plugins-init/datatables.init.js')}}" type="text/javascript"></script>
+    <script src="{{asset('admin/public/js/custom.min.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('admin/public/js/deznav-init.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('admin/public/js/demo.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('admin/public/js/styleSwitcher.js') }}" type="text/javascript"></script>
+
 </body>
 
 </html>

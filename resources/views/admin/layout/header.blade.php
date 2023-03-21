@@ -16,10 +16,9 @@
     <meta property="og:image" content="../social-image.html" />
     <meta name="format-detection" content="telephone=no">
     <title>Admin | Dashboard</title>
-    <link rel="shortcut icon" type="image/png" href="{{ asset('admin/public/images/logo.png') }}" />
-    <link href="{{ asset('admin/public/vendor/chartist/css/chartist.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('admin/public/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet"
-        type="text/css" />
+    {{-- css --}}
+    <link href="{{ asset('admin/public/vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/public/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/public/css/style.css') }}" rel="stylesheet" type="text/css" />
 </head>
 
@@ -53,8 +52,7 @@
                         <div class="header-left">
                             <div class="nav-item">
                                 <div class="input-group search-area">
-                                    <input type="text" class="form-control"
-                                        placeholder="Find something here......">
+                                    <input type="text" class="form-control" placeholder="Find something here......">
                                     <span class="input-group-text"><a href="javascript:void(0)"><i
                                                 class="flaticon-381-search-2"></i></a></span>
                                 </div>
