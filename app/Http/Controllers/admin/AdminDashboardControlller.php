@@ -11,4 +11,11 @@ class AdminDashboardControlller extends Controller
     {
         return view('admin.index');
     }
+
+    public function allUser()
+    {
+        return view('admin.Dashboard.allUser');
+    }
+
+
 }

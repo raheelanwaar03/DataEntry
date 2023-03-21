@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class PaymentController extends Controller
 {
-    public function payment()
+    public function registerationFees()
     {
         return 1;
         return view('auth.payment');

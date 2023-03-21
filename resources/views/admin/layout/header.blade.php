@@ -87,7 +87,7 @@
                             <span class="nav-text">User's</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="#">All User's</a></li>
+                            <li><a href="{{ route('Admin.All.Users') }}">All User's</a></li>
                             <li><a href="#">Pending User's</a></li>
                             <li><a href="#">Approved User's</a></li>
                             <li><a href="#">Rejected User's</a></li>
