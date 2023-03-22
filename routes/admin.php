@@ -8,6 +8,9 @@ Route::prefix('Admin/')->name('Admin.')->middleware('auth','admin')->group(funct
 
 Route::get('Dashboard',[AdminDashboardControlller::class,'index'])->name('Dashboard');
 Route::get('All/Users',[AdminDashboardControlller::class,'allUser'])->name('All.Users');
+Route::get('All/Pending/Users',[AdminDashboardControlller::class,'pendingUsers'])->name('All.Pending.Users');
+Route::get('All/Rejected/Users',[AdminDashboardControlller::class,'rejectedUsers'])->name('All.Rejected.Users');
+Route::get('All/Approved/Users',[AdminDashboardControlller::class,'approvedUsers'])->name('All.Approved.Users');
 
 // User account action
 

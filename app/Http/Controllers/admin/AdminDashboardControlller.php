@@ -17,7 +17,25 @@ class AdminDashboardControlller extends Controller
     public function allUser()
     {
         $users = User::get();
-        return view('admin.Dashboard.allUser',compact('users'));
+        return view('admin.Dashboard.user.allUser',compact('users'));
+    }
+
+    public function pendingUsers()
+    {
+        $users = User::where('status','pending')->get();
+        return view('admin.Dashboard.user.pending',compact('users'));
+    }
+
+    public function rejectedUsers()
+    {
+        $users = User::where('status','rejected')->get();
+        return view('admin.Dashboard.user.rejected',compact('users'));
+    }
+
+    public function approvedUsers()
+    {
+        $users = User::where('status','approved')->get();
+        return view('admin.Dashboard.user.approved',compact('users'));
     }
 
     // User account action

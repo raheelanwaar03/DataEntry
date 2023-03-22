@@ -86,9 +86,9 @@
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="{{ route('Admin.All.Users') }}">All User's</a></li>
-                            <li><a href="#">Pending User's</a></li>
-                            <li><a href="#">Approved User's</a></li>
-                            <li><a href="#">Rejected User's</a></li>
+                            <li><a href="{{ route('Admin.All.Pending.Users') }}">Pending User's</a></li>
+                            <li><a href="{{ route('Admin.All.Approved.Users') }}">Approved User's</a></li>
+                            <li><a href="{{ route('Admin.All.Rejected.Users') }}">Rejected User's</a></li>
                         </ul>
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
