@@ -2,4 +2,6 @@
 
 @yield('content')
 
+<alert-/>
+
 @include('layouts.footer')

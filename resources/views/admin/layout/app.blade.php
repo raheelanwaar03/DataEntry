@@ -2,4 +2,6 @@
 
 @yield('content')
 
+ <alert-/>
+
 @include('admin.layout.footer')
