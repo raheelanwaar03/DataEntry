@@ -16,5 +16,10 @@ Route::get('Rejected/User/Account/{id}',[AdminDashboardControlller::class,'rejec
 Route::get('Pending/User/Account/{id}',[AdminDashboardControlller::class,'pendingUser'])->name('Pending.User.Account');
 
 
+// Admin can set user referal limite
+
+Route::get('Set/Limite',[AdminDashboardControlller::class,'referalLimite'])->name('Set.Limite');
+Route::post('Store/Set/Limite',[AdminDashboardControlller::class,'storeLimite'])->name('Store.Set.Limite');
+
 
 });

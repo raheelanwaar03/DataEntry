@@ -96,7 +96,7 @@
                             <span class="nav-text">Limite's</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="chart-flot.html">Add Referal limit</a></li>
+                            <li><a href="{{ route('Admin.Set.Limite') }}">Add Referal limit</a></li>
                         </ul>
                     </li>
                     {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
