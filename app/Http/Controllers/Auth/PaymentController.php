@@ -10,7 +10,6 @@ class PaymentController extends Controller
 {
     public function registerationFees()
     {
-        return 1;
         return view('auth.payment');
     }
 
@@ -30,6 +29,11 @@ class PaymentController extends Controller
         $userPayment->save();
         return redirect()->route('Welcome');
 
+    }
+
+    public function verificationPage()
+    {
+        return view('auth.verification');
     }
 
 }

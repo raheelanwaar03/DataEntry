@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
-    <title>Authentication</title>
+    <title>Payment Page</title>
 </head>
 
 <body style="background-image: url({{ asset('assets/img/bg/9.jpg') }});background-repeat:no-repeat;background-size:cover;">
-    <x-alert/>
-    <img src="" alt="">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
