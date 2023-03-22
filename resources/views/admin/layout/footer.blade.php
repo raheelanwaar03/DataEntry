@@ -17,7 +17,6 @@
     <script src="{{asset('admin/public/js/custom.min.js')}}" type="text/javascript"></script>
     <script src="{{ asset('admin/public/js/deznav-init.js') }}" type="text/javascript"></script>
     <script src="{{ asset('admin/public/js/demo.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('admin/public/js/styleSwitcher.js') }}" type="text/javascript"></script>
 
 </body>
 

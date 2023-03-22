@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AdminDashboardControlller extends Controller
@@ -14,7 +15,8 @@ class AdminDashboardControlller extends Controller
 
     public function allUser()
     {
-        return view('admin.Dashboard.allUser');
+        $users = User::get();
+        return view('admin.Dashboard.allUser',compact('users'));
     }
 
 
