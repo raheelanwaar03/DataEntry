@@ -21,7 +21,7 @@ class status
         }
         else
         {
-            return redirect()->route('Welcome')->with('error','Please wait for your Account Approvel');
+            return redirect()->route('Welcome')->with('error','Please wait for your Account Approval');
         }
     }
 }
