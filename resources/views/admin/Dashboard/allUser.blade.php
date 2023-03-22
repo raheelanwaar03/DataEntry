@@ -34,22 +34,13 @@
                                         <td>{{ $user->status }}</td>
                                         <td>{{ $user->created_at }}</td>
                                         <td>
-                                            <a href="#" class="btn btn-primary">Approve</a>
-                                            <a href="#" class="btn btn-danger">Rejected</a>
-                                            <a href="#" class="btn btn-info">Pending</a>
+                                            <a href="{{ route('Admin.Approve.User.Account',['id'=>$user->id]) }}" class="btn btn-sm btn-primary">Approve</a>
+                                            <a href="{{ route('Admin.Rejected.User.Account',['id'=>$user->id]) }}" class="btn btn-sm btn-danger">Rejected</a>
+                                            <a href="{{ route('Admin.Pending.User.Account',['id'=>$user->id]) }}" class="btn btn-sm btn-info">Pending</a>
                                         </td>
                                     </tr>
                                     @endforeach
                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Email</th>
-                                            <th>Tid</th>
-                                            <th>Status</th>
-                                            <th>Date</th>
-                                        </tr>
-                                    </tfoot>
                                 </table>
                             </div>
                         </div>
