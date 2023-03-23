@@ -5,8 +5,10 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\admin\Limite;
 use App\Models\admin\PaymentPageText;
+use App\Models\admin\VerificationText;
 use App\Models\User;
 use Illuminate\Http\Request;
+
 
 class AdminDashboardControlller extends Controller
 {
@@ -145,6 +147,39 @@ class AdminDashboardControlller extends Controller
         $paymentText->account_num = $request->account_num;
         $paymentText->save();
         return redirect()->route('Admin.Payment.Page.Text')->with('success','Details Updated Successfully');
+    }
+
+    public function verificationPage()
+    {
+        $verificationText = VerificationText::where('status',1)->get();
+        return view('admin.settings.verificationText',compact('verificationText'));
+    }
+
+    public function storeVerificationPage(Request $request)
+    {
+        $validated = $request->validate([
+            'text' =>'required',
+        ]);
+
+        $verificationText = new VerificationText();
+        $verificationText->text = $validated['text'];
+        $verificationText->save();
+        return redirect()->back()->with('success','Verification Text Added Successfully');
+    }
+
+    public function editVerificationPage($id)
+    {
+        $verificationText = VerificationText::find($id);
+        return view('admin.settings.editVerification',compact('verificationText'));
+    }
+
+    public function updateVerificationPage(Request $request,$id)
+    {
+        $verificationText = VerificationText::find($id);
+
+        $verificationText->text = $request->text;
+        $verificationText->save();
+        return redirect()->route('Admin.Verification.Page.Text')->with('success','Text Updated Successfully');
     }
 
 }

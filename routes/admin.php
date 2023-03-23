@@ -29,6 +29,13 @@ Route::get('Payment/Page/Text',[AdminDashboardControlller::class,'paymentText'])
 Route::post('Store/Payment/Page/Text',[AdminDashboardControlller::class,'storePaymentText'])->name('Store.Payment.Page.Text');
 Route::get('Edit/Payment/Page/Text/{id}',[AdminDashboardControlller::class,'editPaymentText'])->name('Edit.Payment.Page.Text');
 Route::post('Update/Payment/Page/Text/{id}',[AdminDashboardControlller::class,'updatePaymentText'])->name('Update.Payment.Page.Text');
+Route::get('Verification/Text',[AdminDashboardControlller::class,'verificationPage'])->name('Verification.Page.Text');
+Route::post('Store/Verification/Text',[AdminDashboardControlller::class,'storeVerificationPage'])->name('Store.Verification.Page.Text');
+Route::get('Edit/Verification/Text/{id}',[AdminDashboardControlller::class,'editVerificationPage'])->name('Edit.Verification.Page.Text');
+Route::post('Update/Verification/Text/{id}',[AdminDashboardControlller::class,'updateVerificationPage'])->name('Update.Verification.Page.Text');
+
+
+
 
 
 });

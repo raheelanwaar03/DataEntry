@@ -29,7 +29,7 @@ class PaymentController extends Controller
         $userPayment->easypaisaNum = $validated['easypaisaNum'];
         $userPayment->tid = $validated['tid'];
         $userPayment->save();
-        return redirect()->route('Welcome');
+        return redirect()->route('Verification.Page');
 
     }
 

@@ -98,6 +98,7 @@
                         <ul aria-expanded="false">
                             <li><a href="{{ route('Admin.Set.Limite') }}">Add Referal limit</a></li>
                             <li><a href="{{ route('Admin.Payment.Page.Text') }}">Payment Page Text</a></li>
+                            <li><a href="{{ route('Admin.Verification.Page.Text') }}">Verification Page Text</a></li>
                         </ul>
                     </li>
                     {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
