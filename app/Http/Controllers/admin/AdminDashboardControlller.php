@@ -112,4 +112,21 @@ class AdminDashboardControlller extends Controller
         return redirect()->back()->with('success','Details Added successfully');
     }
 
+    public function editPaymentText($id)
+    {
+        $paymentText = PaymentPageText::find($id);
+        return view('admin.settings.editText',compact('paymentText'));
+    }
+
+    public function updatePaymentText(Request $request,$id)
+    {
+        $paymentText = PaymentPageText::find($id);
+
+        $paymentText->text = $request->text;
+        $paymentText->holder = $request->holder;
+        $paymentText->account_num = $request->account_num;
+        $paymentText->save();
+        return redirect()->route('Admin.Payment.Page.Text')->with('success','Details Updated Successfully');
+    }
+
 }

@@ -61,7 +61,7 @@
                                         <td>{{ $text->text }}</td>
                                         <td>{{ $text->holder }}</td>
                                         <td>{{ $text->account_num }}</td>
-                                        <td><a href="#" class="btn btn-primary">Edit</a></td>
+                                        <td><a href="{{ route('Admin.Edit.Payment.Page.Text',['id'=>$text->id]) }}" class="btn btn-primary">Edit</a></td>
                                     </tr>
                                     @endforeach
                                    </tbody>

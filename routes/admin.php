@@ -25,6 +25,8 @@ Route::get('Set/Limite',[AdminDashboardControlller::class,'referalLimite'])->nam
 Route::post('Store/Set/Limite',[AdminDashboardControlller::class,'storeLimite'])->name('Store.Set.Limite');
 Route::get('Payment/Page/Text',[AdminDashboardControlller::class,'paymentText'])->name('Payment.Page.Text');
 Route::post('Store/Payment/Page/Text',[AdminDashboardControlller::class,'storePaymentText'])->name('Store.Payment.Page.Text');
+Route::get('Edit/Payment/Page/Text/{id}',[AdminDashboardControlller::class,'editPaymentText'])->name('Edit.Payment.Page.Text');
+Route::post('Update/Payment/Page/Text/{id}',[AdminDashboardControlller::class,'updatePaymentText'])->name('Update.Payment.Page.Text');
 
 
 });
