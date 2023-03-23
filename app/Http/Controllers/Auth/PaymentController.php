@@ -4,6 +4,7 @@ namespace App\Http\Controllers\auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\admin\PaymentPageText;
+use App\Models\admin\VerificationText;
 use App\Models\auth\UserPayment;
 use Illuminate\Http\Request;
 
@@ -35,7 +36,8 @@ class PaymentController extends Controller
 
     public function verificationPage()
     {
-        return view('auth.verification');
+        $verificationText = VerificationText::where('status',1)->get();
+        return view('auth.verification',compact('verificationText'));
     }
 
 }

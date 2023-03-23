@@ -9,7 +9,7 @@
     <title>Payment Page</title>
 </head>
 
-<body>
+<body class="bg-success">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -25,14 +25,16 @@
                         <h2 class="text-center mt-3">Verification</h2>
                     </div>
                     <div class="card-body">
-                        <p class="text-center text-dark" style="font-size:30px;font-family:verdana;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, odit. Fugit corporis, vitae,
-                            voluptas natus illum, tenetur eaque earum eum dolores consectetur eius! Qui, illo
-                            dignissimos? Dolorum libero incidunt reprehenderit voluptas assumenda distinctio similique
-                            repellendus beatae? Ab similique distinctio libero magni amet quasi dicta accusantium
-                            labore, nemo dolorum ipsa corrupti?</p>
+                        @forelse ($verificationText as $text)
+                        <p class="text-center text-dark" style="font-size:30px;font-family:verdana;">
+                        {{$text->text}}
+                        </p>
+                        @empty
+                            <h4>Admin have not entered any text ye!</h4>
+                        @endforelse
                     </div>
                     <div class="card-footer text-center">
-                        <a href="{{ route('Welcome') }}" class="btn btn-success">Main Page</a>
+                        <a href="{{ route('Welcome') }}" class="btn btn-outline-light">Main Page</a>
                     </div>
                 </div>
             </div>
