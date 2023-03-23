@@ -21,9 +21,13 @@
             <div class="col-md-12 d-flex justify-content-center align-items-center">
                 <div class="card bg-transparent border-black shadow-lg w-100">
                     <div class="card-title">
-                        <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum nesciunt deleniti, sit saepe ex voluptate officiis blanditiis minus natus?</p>
-                        <h4 class="text-center">Easypaisa Name:</h4>
-                        <h4 class="text-center">Easypaisa Number:</h4>
+                        @forelse ($paymentText as $text)
+                        <p class="text-center mt-3">{{ $text->text }}</p>
+                        <h4 class="text-center">Easypaisa Holder Name: ({{ $text->holder }})</h4>
+                        <h4 class="text-center">Easypaisa Account Number: ({{ $text->account_num }})</h4>
+                        @empty
+
+                        @endforelse
                     </div>
                     <div class="card-body">
                         <form action="{{ route('Payment.Store') }}" method="POST">

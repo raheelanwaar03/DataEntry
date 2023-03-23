@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\admin\PaymentPageText;
 use App\Models\auth\UserPayment;
 use Illuminate\Http\Request;
 
@@ -10,7 +11,8 @@ class PaymentController extends Controller
 {
     public function registerationFees()
     {
-        return view('auth.payment');
+        $paymentText = PaymentPageText::where('status',1)->get();
+        return view('auth.payment',compact('paymentText'));
     }
 
     public function paymentStore(Request $request)
