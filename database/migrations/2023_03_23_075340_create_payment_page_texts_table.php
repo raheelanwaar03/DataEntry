@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('payment_page_texts', function (Blueprint $table) {
             $table->id();
-            $table->string('text');
+            $table->text('text');
             $table->string('holder');
-            $table->integer('account_num');
+            $table->bigInteger('account_num');
+            $table->string('status')->default(0);
             $table->timestamps();
         });
     }

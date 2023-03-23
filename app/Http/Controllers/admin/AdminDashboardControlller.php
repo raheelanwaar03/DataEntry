@@ -71,7 +71,8 @@ class AdminDashboardControlller extends Controller
 
     public function referalLimite()
     {
-        return view('admin.Dashboard.referalLimite');
+        $limite = Limite::where('status',1)->get();
+        return view('admin.settings.referalLimite',compact('limite'));
     }
 
     public function storeLimite(Request $request)
@@ -90,9 +91,26 @@ class AdminDashboardControlller extends Controller
         return redirect()->back()->with('success','Limite applied successfully');
     }
 
+    public function editLimite($id)
+    {
+        $limite = Limite::find($id);
+        return view('admin.settings.editReferal',compact('limite'));
+    }
+
+    public function updateLimite(Request $request,$id)
+    {
+        $limite = Limite::find($id);
+
+        $limite->min = $request->min;
+        $limite->max = $request->max;
+        $limite->referal_commission = $request->referal_commission;
+        $limite->save();
+        return redirect()->route('Admin.Set.Limite')->with('success','Limite updated');
+    }
+
     public function paymentText()
     {
-        $paymentText = PaymentPageText::get();
+        $paymentText = PaymentPageText::where('status',1)->get();
         return view('admin.settings.paymentText',compact('paymentText'));
     }
 

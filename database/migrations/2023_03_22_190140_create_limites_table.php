@@ -16,6 +16,7 @@ return new class extends Migration
             $table->integer('min');
             $table->integer('max');
             $table->integer('referal_commission');
+            $table->string('status')->default(0);
             $table->timestamps();
         });
     }
