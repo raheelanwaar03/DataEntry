@@ -17,25 +17,25 @@ class AdminDashboardControlller extends Controller
 
     public function allUser()
     {
-        $users = User::get();
+        $users = User::with('trxIds')->get();
         return view('admin.Dashboard.user.allUser',compact('users'));
     }
 
     public function pendingUsers()
     {
-        $users = User::where('status','pending')->get();
+        $users = User::where('status','pending')->with('trxIds')->get();
         return view('admin.Dashboard.user.pending',compact('users'));
     }
 
     public function rejectedUsers()
     {
-        $users = User::where('status','rejected')->get();
+        $users = User::where('status','rejected')->with('trxIds')->get();
         return view('admin.Dashboard.user.rejected',compact('users'));
     }
 
     public function approvedUsers()
     {
-        $users = User::where('status','approved')->get();
+        $users = User::where('status','approved')->with('trxIds')->get();
         return view('admin.Dashboard.user.approved',compact('users'));
     }
 

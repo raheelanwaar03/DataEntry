@@ -30,7 +30,7 @@
                                         <td>{{ $user->name }}</td>
                                         <td>{{ $user->email }}</td>
                                         <td>{{ $user->phone }}</td>
-                                        <td>{{ $user->phone }}</td>
+                                        <td>{{ $user->trxIds->tid ?? 'UnPaidUser' }}</td>
                                         <td>{{ $user->status }}</td>
                                         <td>{{ $user->created_at }}</td>
                                         <td>
