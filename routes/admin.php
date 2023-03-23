@@ -23,6 +23,8 @@ Route::get('Pending/User/Account/{id}',[AdminDashboardControlller::class,'pendin
 
 Route::get('Set/Limite',[AdminDashboardControlller::class,'referalLimite'])->name('Set.Limite');
 Route::post('Store/Set/Limite',[AdminDashboardControlller::class,'storeLimite'])->name('Store.Set.Limite');
+Route::get('Payment/Page/Text',[AdminDashboardControlller::class,'paymentText'])->name('Payment.Page.Text');
+Route::post('Store/Payment/Page/Text',[AdminDashboardControlller::class,'storePaymentText'])->name('Store.Payment.Page.Text');
 
 
 });

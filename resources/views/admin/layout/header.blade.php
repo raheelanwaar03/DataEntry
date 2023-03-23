@@ -93,10 +93,11 @@
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="flaticon-041-graph"></i>
-                            <span class="nav-text">Limite's</span>
+                            <span class="nav-text">Settings</span>
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="{{ route('Admin.Set.Limite') }}">Add Referal limit</a></li>
+                            <li><a href="{{ route('Admin.Payment.Page.Text') }}">Payment Page Text</a></li>
                         </ul>
                     </li>
                     {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">

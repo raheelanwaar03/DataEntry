@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\admin\Limite;
+use App\Models\admin\PaymentPageText;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -64,6 +65,8 @@ class AdminDashboardControlller extends Controller
         return redirect()->back()->with('success','User Account pending successfully');
     }
 
+    // All Settings
+
     // admin can set referal limite
 
     public function referalLimite()
@@ -85,6 +88,28 @@ class AdminDashboardControlller extends Controller
         $limite->referal_commission = $validated['referal_commission'];
         $limite->save();
         return redirect()->back()->with('success','Limite applied successfully');
+    }
+
+    public function paymentText()
+    {
+        $paymentText = PaymentPageText::get();
+        return view('admin.settings.paymentText',compact('paymentText'));
+    }
+
+    public function storePaymentText(Request $request)
+    {
+        $validated = $request->validate([
+            'text' => 'required',
+            'holder' => 'required',
+            'account_num' => 'required',
+        ]);
+
+        $paymentText = new PaymentPageText();
+        $paymentText->text = $validated['text'];
+        $paymentText->holder = $validated['holder'];
+        $paymentText->account_num = $validated['account_num'];
+        $paymentText->save();
+        return redirect()->back()->with('success','Details Added successfully');
     }
 
 }
