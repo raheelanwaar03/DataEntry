@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\AdminDashboardControlller;
+use App\Http\Controllers\admin\DailyTaskController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -34,7 +35,13 @@ Route::post('Store/Verification/Text',[AdminDashboardControlller::class,'storeVe
 Route::get('Edit/Verification/Text/{id}',[AdminDashboardControlller::class,'editVerificationPage'])->name('Edit.Verification.Page.Text');
 Route::post('Update/Verification/Text/{id}',[AdminDashboardControlller::class,'updateVerificationPage'])->name('Update.Verification.Page.Text');
 
+// Daily Task
 
+Route::get('Daily/Task',[DailyTaskController::class,'index'])->name('Daily.Task');
+Route::post('Store/Daily/Task',[DailyTaskController::class,'store'])->name('Store.Daily.Task');
+Route::get('All/Daily/Task',[DailyTaskController::class,'allTask'])->name('All.Daily.Tasks');
+Route::get('Edit/Daily/Task/{id}',[DailyTaskController::class,'editTask'])->name('Edit.Daily.Tasks');
+Route::post('Update/Daily/Task/{id}',[DailyTaskController::class,'updateTask'])->name('Update.Daily.Tasks');
 
 
 

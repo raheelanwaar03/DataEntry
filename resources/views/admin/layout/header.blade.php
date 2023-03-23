@@ -101,16 +101,16 @@
                             <li><a href="{{ route('Admin.Verification.Page.Text') }}">Verification Page Text</a></li>
                         </ul>
                     </li>
-                    {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                            <i class="flaticon-045-heart"></i>
-                            <span class="nav-text">Food</span>
+                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <i class="flaticon-013-checkmark"></i>
+                            <span class="nav-text">Daily Task</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="#">Add Food</a></li>
-                            <li><a href="#">All Food</a></li>
+                            <li><a href="{{ route('Admin.Daily.Task') }}">Add New Task</a></li>
+                            <li><a href="{{ route('Admin.All.Daily.Tasks') }}">All Tasks</a></li>
                         </ul>
                     </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                   {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="flaticon-013-checkmark"></i>
                             <span class="nav-text">Reservation</span>
                         </a>
