@@ -7,12 +7,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-// registeration fees
-Route::get('Registeration/Fees',[PaymentController::class,'registerationFees'])->name('Registeration.Fees');
-Route::post('/Payment/Store',[PaymentController::class,'paymentStore'])->name('Payment.Store');
-Route::get('Verification/Page',[PaymentController::class,'verificationPage'])->name('Verification.Page');
-
-
 Route::get('/',[LandingPageCotroller::class,'index'])->name('Welcome');
 Route::get('/ContactUs',[LandingPageCotroller::class,'contactUs'])->name('Welcome.Contact.Us');
 Route::get('/AboutUs',[LandingPageCotroller::class,'aboutUs'])->name('Welcome.About.Us');

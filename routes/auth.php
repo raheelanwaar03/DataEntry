@@ -36,6 +36,14 @@ Route::middleware('guest')->group(function () {
                 ->name('password.store');
 });
 
+
+// registeration fees
+Route::get('Registeration/Fees',[PaymentController::class,'registerationFees'])->name('Registeration.Fees');
+Route::post('/Payment/Store',[PaymentController::class,'paymentStore'])->name('Payment.Store');
+Route::get('Verification/Page',[PaymentController::class,'verificationPage'])->name('Verification.Page');
+
+
+
 Route::middleware('auth')->group(function () {
     Route::get('verify-email', EmailVerificationPromptController::class)
                 ->name('verification.notice');
